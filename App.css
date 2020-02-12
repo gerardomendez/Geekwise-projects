@@ -1,0 +1,278 @@
+/*Global Styles
+a:visited{
+  color:red;
+}
+*/
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
+nav
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  
+}
+.spacer{
+  margin-top: 30px;
+}
+
+body {
+  background: url('./img/building.jpg') no-repeat top center;
+  background-size: cover;
+  height: 100vh;
+
+}
+
+header {
+  display: flex;
+  /* background-color:grey;*/
+  width: 90%;
+  margin: auto;
+  align-items: center;
+}
+.logo-container,
+.nav-links {
+  display: flex;
+}
+.nav-links a:hover{
+  color: red;
+}
+
+.logo-container {
+  /* background-color: grey;*/
+  flex: 1;
+}
+.logo {
+  font-weight: 400;
+  margin: 5px;
+}
+nav {
+  /*background-color:rgba(210,105,30, .5);*/
+  flex: 2;
+  text-transform: uppercase;
+  background: white;
+  box-shadow: 0 0 20px #00000b;
+}
+.nav-links {
+  justify-content: space-around;
+  list-style: none;
+}
+.nav-link {
+  color: rgb(207,23,23);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+
+
+.document1 {
+  font-size: 14px;
+}
+h1 {
+  text-align: center;
+  font-size: 48px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: rgba(0, 0, 128.5);
+  background-color: rgba(210, 105, 30, 0.5);
+
+  /* background: linear-gradient(to right,#494964,#6f6f89 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
+  flex: 1;
+}
+
+p {
+  color: black;
+  margin-top: 5px;
+  font-size: 22px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+}
+.cute-box {
+  height: 500px;
+  display: flex;
+  flex-direction:column;
+  align-items: left;
+  width: 1200px;
+  padding: 30px 40px;
+  background:rgba(154,195,217,0.7);
+  box-shadow: 0 0 20px #00000b;
+  border: 2px solid green;
+ 
+}
+.col2{
+  float: right;
+}
+.video-box {
+  height: 500px;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  width: 1200px;
+  padding: 30px 40px;
+  background:rgba(154,195,217,0.7);
+  box-shadow: 0 0 20px #00000b;
+  border: 2px solid green;
+ 
+}
+.cute-box2{
+  height: 500px;
+  width: 1200px;
+  padding: 30px 40px;
+  background:rgba(154,195,217,0.7);
+  box-shadow: 0 0 20px #00000b;
+  border: 2px solid green;
+  
+}
+
+
+.previous-box {
+  height: 500px;
+  width: 10000px;
+  padding: 30px 40px;
+  background:rgba(154,195,217,0.7);
+  box-shadow: 0 0 20px #00000b;
+  border: 2px solid green;
+}
+.myVideo{
+  height: 400px;
+  width: 200px;
+  justify-self: center;
+}
+
+.special-text {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0 0 20px;
+  padding: 0;
+  font-size: 20px;
+  
+}
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.about-container{
+  height: 700px;
+  width: 100%;
+  margin-top: 120px;
+  margin-bottom: 20px;
+
+}
+.about-column{
+  width: 25%;
+  border: 2px solid green;
+  float: left;
+  padding: 25px 20px;
+  margin-left: 20px;
+  /* overflow: hidden; */
+  text-align: center;
+  background:rgba(154,195,217,0.7);
+  box-shadow: 0 0 20px #00000b;
+}
+.about-img{
+  height: 300px;
+  max-width:250px;
+  margin:auto;
+
+}
+.about-audio{
+  margin-bottom: 200px;
+}
+
+.footer {
+  padding: 10px;
+  height: 18px;
+  clear: right;
+  background: #f1f1f1;
+  box-shadow: 0 0 20px #00000b;
+}
+.copyright {
+  
+  float: right;
+}
+.main-content{
+  float:left;
+
+}
+
+.outter{
+  display:inline;
+}
+
+/*Contact form code*/
+
+.Contact *{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+  
+  
+}
+
+.contact-form{
+  width: 40%;
+  border: 2px solid green;
+  float: right;
+  padding: 25px 20px;
+  margin-left: 20px;
+  text-align: center;
+  background:rgba(154,195,217,0.7);
+  box-shadow: 0 0 20px #00000b;
+}
+.input-fields{
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+.input-fields, .msg{
+  width: 48%;
+}.input-fields, .input, .msg textarea{
+  margin: 10px 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid black;
+  padding: 10px;
+  color: black;
+  width: 100%;
+
+}
+.msg textarea{
+  height: 200px;
+}
+::-webkit-input-placeholder{
+  color: black;
+}
+.btn{
+  background: green;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  color:#fff;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.map{
+  width: 50%;
+  border: 2px solid green;
+  float: right;
+  padding: 10px 10px;
+  margin-left: 10px;
+  text-align: center;
+  background:rgba(154,195,217,0.7);
+  box-shadow: 0 0 20px #00000b;
+}
+
+
